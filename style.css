@@ -1,0 +1,9 @@
+.header-wrap {
+  max-width: 70.62495 rem;
+  margin: auto 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
