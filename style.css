@@ -50,7 +50,7 @@ li {
 .black-nav a:hover {
   color: var(--blue);
 }
-a:hover:after {
+.black-nav a:hover:after {
   background: rgb(1, 58, 105);
   display: block;
   content: "";
@@ -75,9 +75,6 @@ a:hover:after {
   letter-spacing: 1px;
   line-height: 1.2;
 }
-article {
-}
-
 .read-more {
   background: #f5f5f5;
   font-weight: bold;
@@ -90,7 +87,7 @@ article {
   display: grid;
   grid-template-columns: 8.9fr 1fr;
   padding: 15px;
-  margin: 10px;
+  margin: 4spx 10px;
 }
 .description {
   font-size: 22px;
@@ -104,4 +101,107 @@ article {
   justify-self: center;
   align-self: center;
   padding-left: 10px;
+}
+.active-tab:after {
+  background: rgb(1, 58, 105);
+  display: block;
+  content: "";
+  height: 5px;
+  width: calc(100% - 6px);
+  position: absolute;
+  left: 3px;
+  bottom: 5px;
+  transform: rotate(180deg);
+}
+.active-tab {
+  color: var(--blue);
+}
+.side-nav li {
+  font-size: 14px;
+  background-color: #f5f5f5;
+  font-weight: bold;
+  cursor: pointer;
+}
+.side-nav li:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.sidebar {
+  margin-left: 10px;
+}
+.card p {
+  cursor: pointer;
+}
+.card p:hover {
+  color: var(--blue);
+}
+b {
+  font-weight: bold;
+}
+i {
+  font-style: italic;
+}
+credit {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+blue {
+  color: var(--blue);
+}
+
+.main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.tag-section {
+  margin: 20px 0px;
+}
+.tag {
+  font-size: 14px;
+  background: #005587;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  margin: 5px;
+  padding: 8px;
+}
+.foot {
+  display: grid;
+  justify-content: center;
+  background-color: #f5f5f5;
+  justify-self: center;
+  align-self: center;
+}
+.footer-wrap {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 1100px;
+}
+.sign-up {
+  font-weight: bold;
+  font-size: 30px;
+  justify-self: start;
+}
+.sign-up-form {
+}
+
+.email-input {
+  width: 400px;
+  margin: 0px 20px;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid black;
+  background-color: #f5f5f5;
+}
+.sign-up-button {
+  background: #005587;
+  color: white;
+  font-weight: bold;
+  padding: 8px 90px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 0px solid black;
 }
